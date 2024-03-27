@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+h2{
+    text-align: center;
+}
+
+header, footer {
+    background: #00caa4;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#servicios {
+    padding: 2em;
+}
+
+
+
+.servicio-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicio-detalle span {
+    margin: 5px;
+    flex-basis: calc(33% - 10px);
+    text-align: center;
+}
+
+.precio {
+    text-decoration: none;
+    background: #055244;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+
+@media (max-width: 600px) {
+    .servicio-detalle {
+        flex-direction: column;
+    }
+    
+    .servicio-detalle span {
+        flex-basis: 100%;
+    }
+}
+
+
+.servicio {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+    padding: 1em;
+    position: relative;
+    transition: transform 0.3s ease; /* Agrega una transición para el cambio de escala */
+}
+
+.servicio:hover {
+    transform: scale(1.05); /* Aplica un aumento de escala al pasar el mouse sobre el elemento */
+}
+
+
+/************************************************************************************/
+
+/* Estilos para el logo */
+#logo {
+    width: 150px; /* ajusta el tamaño del logo */
+    border-radius: 10px; /* añade esquinas redondeadas */
+}
+
+/* Estilos para el botón de WhatsApp */
+#whatsapp-button {
+    float: right; /* flotar a la derecha */
+    margin-top: 10px; /* ajusta el margen superior según necesites */
+}
+
+/* Estilos para el botón del logo */
+#logo-button {
+    float: left; /* flotar a la izquierda */
+    margin-top: -30px; /* ajusta el margen superior según necesites */
+}
+
+/* Estilos adicionales para el logo de WhatsApp */
+#whatsapp-button img {
+    margin-right: 10px; /* ajusta el margen a la derecha para separarlo del logo */
+    width: 120px; /* ajusta el tamaño del logo */
+    margin-top: -30px; /* ajusta el margen superior según necesites */
+}
+
+
+/*************************************************************************/
+
